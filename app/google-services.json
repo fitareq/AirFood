@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "227707382237",
+    "project_id": "airfood-2038a",
+    "storage_bucket": "airfood-2038a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:227707382237:android:f4a26a2ef80c00bce52e34",
+        "android_client_info": {
+          "package_name": "com.airmoll.airfood"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "227707382237-r97ikop18bcefkfhe1e79qoql6vgo636.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCTbO0KCPPyoUOcYQIkCfUqHMtS2GDcJZo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "227707382237-r97ikop18bcefkfhe1e79qoql6vgo636.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
