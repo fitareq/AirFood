@@ -88,7 +88,7 @@ public class IntroActivity extends AppCompatActivity {
         {
             bottomBars[i]=new TextView(IntroActivity.this);
             bottomBars[i].setTextSize(50);
-            bottomBars[i].setText(Html.fromHtml("-"));
+            bottomBars[i].setText(Html.fromHtml("- "));
             bottomBars[i].setTextColor(ColorsInactive);
             binding.layoutBars.addView(bottomBars[i]);
         }
