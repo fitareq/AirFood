@@ -9,19 +9,11 @@
     <color name="white">#FFFFFFFF</color>
     <color name="grey">#808080</color>
     <color name="ash">#B2BEB5</color>
+    <color name="dot_on_page_not_active">#FDEBEE</color>
+    <color name="dot_on_page_active">#F9B3BD</color>
 
 
-    <array name="dot_on_page_active">
-        <item>#B71C1C</item>
-        <item>#8BC34A</item>
-        <item>#4A148C</item>
 
-    </array>
 
-    <array name="dot_on_page_not_active">
-        <item>#FF5252</item>
-        <item>#CCFF90</item>
-        <item>#E040FB</item>
-    </array>
 
 </resources>
