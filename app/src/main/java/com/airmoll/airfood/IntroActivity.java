@@ -1,5 +1,6 @@
 package com.airmoll.airfood;
 
+import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
 import android.text.Html;
@@ -62,9 +63,16 @@ public class IntroActivity extends AppCompatActivity {
         });
 
 
+
         binding.next.setOnClickListener(v12 -> {
+            String s = binding.next.getText().toString();
+            if (s.equalsIgnoreCase("get started"))
+                launchMain();
             int i = binding.viewpager.getCurrentItem();
             binding.viewpager.setCurrentItem(i+1);
+        });
+        binding.skip.setOnClickListener(v1 -> {
+            launchMain();
         });
 
        /* binding.back.setOnClickListener(v1 -> {
@@ -76,6 +84,11 @@ public class IntroActivity extends AppCompatActivity {
 
 
 
+    }
+
+    private void launchMain()
+    {
+        startActivity(new Intent(IntroActivity.this,MainActivity.class));
     }
 
     private void ColoredBars(int thisScreen)
