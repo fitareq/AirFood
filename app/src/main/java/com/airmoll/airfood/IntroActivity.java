@@ -80,8 +80,8 @@ public class IntroActivity extends AppCompatActivity {
 
     private void ColoredBars(int thisScreen)
     {
-        int ColorsInactive = getResources().getColor(R.color.ash);
-        int colorsActive = getResources().getColor(R.color.black);
+        int ColorsInactive = getResources().getColor(R.color.dot_on_page_not_active);
+        int colorsActive = getResources().getColor(R.color.dot_on_page_active);
         bottomBars = new TextView[images.length];
         binding.layoutBars.removeAllViews();
         for (int i = 0; i<bottomBars.length; i++)
