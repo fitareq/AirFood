@@ -1,14 +1,98 @@
 package com.airmoll.airfood;
 
-import androidx.appcompat.app.AppCompatActivity;
-
+import android.os.Build;
 import android.os.Bundle;
+import android.text.Html;
+import android.view.View;
+import android.widget.TextView;
+
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.viewpager.widget.ViewPager;
+
+import com.airmoll.airfood.databinding.ActivityIntroBinding;
 
 public class IntroActivity extends AppCompatActivity {
+
+    private ActivityIntroBinding binding;
+    PreferenceManager preferenceManager;
+
+    int[] images = {R.drawable.delivery,R.drawable.order,R.drawable.menu};
+    TextView[] bottomBars;
+    ViewPagerAdapter mViewPagerAdapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_intro);
+        binding = ActivityIntroBinding.inflate(getLayoutInflater());
+        View v = binding.getRoot();
+
+        if (Build.VERSION.SDK_INT >= 21) {
+            getWindow().getDecorView().setSystemUiVisibility(View.SYSTEM_UI_FLAG_LAYOUT_STABLE | View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN);
+        }
+        setContentView(v);
+
+        mViewPagerAdapter = new ViewPagerAdapter(images,this);
+        binding.viewpager.setAdapter(mViewPagerAdapter);
+        preferenceManager = new PreferenceManager(this);
+
+        ColoredBars(0);
+
+        binding.viewpager.addOnPageChangeListener(new ViewPager.OnPageChangeListener() {
+            @Override
+            public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {
+
+            }
+
+            @Override
+            public void onPageSelected(int position) {
+                ColoredBars(position);
+                if (position==0)
+                    binding.back.setVisibility(View.GONE);
+                else
+                    binding.back.setVisibility(View.VISIBLE);
+                if (position==images.length-1)
+                    binding.next.setText(R.string.get_started);
+                else binding.next.setText(R.string.next);
+            }
+
+            @Override
+            public void onPageScrollStateChanged(int state) {
+
+            }
+        });
+
+
+        binding.next.setOnClickListener(v12 -> {
+            int i = binding.viewpager.getCurrentItem();
+            binding.viewpager.setCurrentItem(i+1);
+        });
+
+        binding.back.setOnClickListener(v1 -> {
+            int i = binding.viewpager.getCurrentItem();
+            binding.viewpager.setCurrentItem(i-1);
+        });
+
+
+
+
+
+    }
+
+    private void ColoredBars(int thisScreen)
+    {
+        int ColorsInactive = getResources().getColor(R.color.ash);
+        int colorsActive = getResources().getColor(R.color.black);
+        bottomBars = new TextView[images.length];
+        binding.layoutBars.removeAllViews();
+        for (int i = 0; i<bottomBars.length; i++)
+        {
+            bottomBars[i]=new TextView(IntroActivity.this);
+            bottomBars[i].setTextSize(50);
+            bottomBars[i].setText(Html.fromHtml("-"));
+            bottomBars[i].setTextColor(ColorsInactive);
+            binding.layoutBars.addView(bottomBars[i]);
+        }
+        if (bottomBars.length>0)
+            bottomBars[thisScreen].setTextColor(colorsActive);
     }
 }

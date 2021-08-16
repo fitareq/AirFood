@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@color/white"
+    >
+<ImageView
+    android:id="@+id/slider_image"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_300sdp"
+    android:background="@color/white"
+    />
+    <TextView
+        android:id="@+id/slider_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="@dimen/_12sdp"
+        android:gravity="center"
+        android:fontFamily="sans-serif-condensed"
+        android:text="When talking about Android Apps, the first thing that comes to mind is variety."/>
+</LinearLayout>

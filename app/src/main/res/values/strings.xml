@@ -2,4 +2,7 @@
     <string name="app_name">AirFood</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="next">next</string>
+    <string name="back">back</string>
+    <string name="get_started">Get started</string>
 </resources>
