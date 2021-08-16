@@ -46,10 +46,10 @@ public class IntroActivity extends AppCompatActivity {
             @Override
             public void onPageSelected(int position) {
                 ColoredBars(position);
-                if (position==0)
+                /*if (position==0)
                     binding.back.setVisibility(View.GONE);
                 else
-                    binding.back.setVisibility(View.VISIBLE);
+                    binding.back.setVisibility(View.VISIBLE);*/
                 if (position==images.length-1)
                     binding.next.setText(R.string.get_started);
                 else binding.next.setText(R.string.next);
@@ -67,10 +67,10 @@ public class IntroActivity extends AppCompatActivity {
             binding.viewpager.setCurrentItem(i+1);
         });
 
-        binding.back.setOnClickListener(v1 -> {
+       /* binding.back.setOnClickListener(v1 -> {
             int i = binding.viewpager.getCurrentItem();
             binding.viewpager.setCurrentItem(i-1);
-        });
+        });*/
 
 
 
@@ -88,7 +88,7 @@ public class IntroActivity extends AppCompatActivity {
         {
             bottomBars[i]=new TextView(IntroActivity.this);
             bottomBars[i].setTextSize(50);
-            bottomBars[i].setText(Html.fromHtml("- "));
+            bottomBars[i].setText(Html.fromHtml("-"));
             bottomBars[i].setTextColor(ColorsInactive);
             binding.layoutBars.addView(bottomBars[i]);
         }
