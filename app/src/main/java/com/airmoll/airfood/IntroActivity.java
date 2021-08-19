@@ -36,6 +36,11 @@ public class IntroActivity extends AppCompatActivity {
         binding.viewpager.setAdapter(mViewPagerAdapter);
         preferenceManager = new PreferenceManager(this);
 
+        if (!preferenceManager.FirstLaunch())
+        {
+            launchMain();
+            finish();
+        }
         ColoredBars(0);
 
         binding.viewpager.addOnPageChangeListener(new ViewPager.OnPageChangeListener() {
@@ -88,7 +93,9 @@ public class IntroActivity extends AppCompatActivity {
 
     private void launchMain()
     {
+        preferenceManager.setFirstLaunch(false);
         startActivity(new Intent(IntroActivity.this,MainActivity.class));
+        finish();
     }
 
     private void ColoredBars(int thisScreen)

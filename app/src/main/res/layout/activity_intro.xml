@@ -35,8 +35,6 @@
     </LinearLayout>
 
 
-
-
     <Button
         android:id="@+id/next"
         style="@style/Widget.App.ButtonStyle"

@@ -6,4 +6,8 @@
     <string name="back">back</string>
     <string name="get_started">Get started</string>
     <string name="skip">skip</string>
+    <string name="home">Home</string>
+    <string name="order">Order</string>
+    <string name="notification">Notification</string>
+    <string name="more">More</string>
 </resources>

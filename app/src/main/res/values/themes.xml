@@ -20,6 +20,7 @@
     </style>
 
     <style name="GreenButtonThemeOverlay">
+
         <item name="colorPrimary">@color/white</item>
     </style>
 </resources>
