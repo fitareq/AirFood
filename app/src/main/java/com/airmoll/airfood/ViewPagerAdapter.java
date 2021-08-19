@@ -16,7 +16,7 @@ import java.util.Objects;
 public class ViewPagerAdapter extends PagerAdapter {
 
     int[] images;
-    String[] text = {"Your Favourite Food delivery Partner", "Giving your Hunger a new Option", "Why starve when you have us"};
+    String[] text = {"Your Favourite Food delivery Partner", "Giving your Hunger a new Option", "Why starve when you have us?"};
     Context context;
     LayoutInflater mLayoutInflater;
 
