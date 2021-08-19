@@ -17,7 +17,7 @@ public class IntroActivity extends AppCompatActivity {
     private ActivityIntroBinding binding;
     PreferenceManager preferenceManager;
 
-    int[] images = {R.drawable.delivery,R.drawable.order,R.drawable.menu};
+    int[] images = {R.drawable.menu,R.drawable.order,R.drawable.menu};
     TextView[] bottomBars;
     ViewPagerAdapter mViewPagerAdapter;
 
@@ -36,11 +36,11 @@ public class IntroActivity extends AppCompatActivity {
         binding.viewpager.setAdapter(mViewPagerAdapter);
         preferenceManager = new PreferenceManager(this);
 
-        if (!preferenceManager.FirstLaunch())
+        /*if (!preferenceManager.FirstLaunch())
         {
             launchMain();
             finish();
-        }
+        }*/
         ColoredBars(0);
 
         binding.viewpager.addOnPageChangeListener(new ViewPager.OnPageChangeListener() {
@@ -80,7 +80,7 @@ public class IntroActivity extends AppCompatActivity {
             launchMain();
         });
 
-       /* binding.back.setOnClickListener(v1 -> {
+       /* binding.back.setOnClickListener(v1 -> {`
             int i = binding.viewpager.getCurrentItem();
             binding.viewpager.setCurrentItem(i-1);
         });*/
