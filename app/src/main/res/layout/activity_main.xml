@@ -9,9 +9,26 @@
     tools:context=".MainActivity">
 
 
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/airmoll"
+            app:menu="@menu/toolbar_menu"
+            app:title="AirFood"
+            app:titleTextColor="@color/white"/>
+        <FrameLayout
+            android:id="@+id/main_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            />
+    </RelativeLayout>
+
 
     <com.google.android.material.bottomappbar.BottomAppBar
-
         android:id="@+id/bottom_app_bar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -29,7 +46,9 @@
             android:layout_marginEnd="@dimen/_15sdp"
             app:menu="@menu/nav_menu"
             app:labelVisibilityMode="labeled"
-            android:layout_marginRight="16dp" />
+            android:layout_marginRight="16dp"
+
+            />
     </com.google.android.material.bottomappbar.BottomAppBar>
 
 
@@ -38,5 +57,5 @@
         android:layout_height="wrap_content"
         android:contentDescription="@string/app_name"
         android:src="@drawable/ic_baseline_home_24"
-        app:layout_anchor="@id/bottom_app_bar" />
+        app:layout_anchor="@id/bottom_app_bar"/>
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
