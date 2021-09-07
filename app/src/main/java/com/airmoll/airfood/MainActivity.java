@@ -2,6 +2,7 @@ package com.airmoll.airfood;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -27,6 +28,17 @@ public class MainActivity extends AppCompatActivity {
         binding.bottomNav.setBackground(null);
         binding.bottomNav.getMenu().getItem(2).setEnabled(false);
         getSupportFragmentManager().beginTransaction().replace(R.id.main_container,homeFragment).addToBackStack(null).commit();
+        binding.fab.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                goToLoginPage();
+            }
+        });
+    }
+
+    private void goToLoginPage()
+    {
+        Intent intent = new Intent(MainActivity.this, LoginActivity.class);
     }
 
     @Override
@@ -46,5 +58,7 @@ public class MainActivity extends AppCompatActivity {
         };
         return super.onCreateOptionsMenu(menu);
     }
+
+
 }
 

@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="com.airmoll.airfood">
 
+    <uses-permission android:name="android.permission.INTERNET"/>
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -12,6 +13,18 @@
         android:theme="@style/Theme.AirFood"
         android:usesCleartextTraffic="true"
         tools:targetApi="m">
+        <activity
+            android:name=".LoginActivity"
+            android:exported="true" />
+        <!--
+         <service
+            android:name=".MyFirebaseInstanceIdService"
+            >
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        -->
         <activity
             android:name=".SplashActivity"
             android:exported="true">
@@ -26,6 +39,7 @@
             android:exported="true">
 
         </activity>
+
         <activity android:name=".MainActivity">
 
         </activity>
