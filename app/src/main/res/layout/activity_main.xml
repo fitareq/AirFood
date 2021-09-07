@@ -20,11 +20,11 @@
             app:menu="@menu/toolbar_menu"
             app:title="AirFood"
             app:titleTextColor="@color/white"/>
+
         <FrameLayout
             android:id="@+id/main_container"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            />
+            android:layout_height="match_parent" />
     </RelativeLayout>
 
 
@@ -35,8 +35,7 @@
         android:layout_gravity="bottom"
         app:fabCradleMargin="10dp"
         app:fabCradleRoundedCornerRadius="10dp"
-        app:fabCradleVerticalOffset="10dp"
-        >
+        app:fabCradleVerticalOffset="10dp">
 
         <com.google.android.material.bottomnavigation.BottomNavigationView
             android:id="@+id/bottom_nav"
@@ -46,9 +45,7 @@
             android:layout_marginEnd="@dimen/_15sdp"
             app:menu="@menu/nav_menu"
             app:labelVisibilityMode="labeled"
-            android:layout_marginRight="16dp"
-
-            />
+            android:layout_marginRight="16dp"/>
     </com.google.android.material.bottomappbar.BottomAppBar>
 
 
@@ -56,6 +53,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:contentDescription="@string/app_name"
-        android:src="@drawable/ic_baseline_home_24"
-        app:layout_anchor="@id/bottom_app_bar"/>
+        android:src="@drawable/b"
+        android:tint="@color/airmoll"
+        app:layout_anchor="@id/bottom_app_bar"
+        app:maxImageSize="70dp"
+        app:elevation="10dp"
+        app:borderWidth="@dimen/_10sdp"/>
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

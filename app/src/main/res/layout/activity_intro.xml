@@ -37,15 +37,17 @@
     </LinearLayout>
 
 
-    <Button
+
+    <TextView
         android:id="@+id/next"
-        style="@style/Widget.App.ButtonStyle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        style="@style/Widget.App.ButtonStyle"
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentBottom="true"
-        android:text="@string/next" />
+        android:text="@string/next"
+        />
 
     <TextView
         android:id="@+id/skip"
