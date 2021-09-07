@@ -39,6 +39,7 @@ public class MainActivity extends AppCompatActivity {
     private void goToLoginPage()
     {
         Intent intent = new Intent(MainActivity.this, LoginActivity.class);
+        startActivity(intent);
     }
 
     @Override
