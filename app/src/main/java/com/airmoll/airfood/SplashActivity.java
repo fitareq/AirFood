@@ -1,20 +1,21 @@
 package com.airmoll.airfood;
 
-import androidx.appcompat.app.AppCompatActivity;
-
+import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.view.WindowManager;
 
 import com.airmoll.airfood.databinding.ActivitySplashBinding;
 
-public class SplashActivity extends AppCompatActivity {
+public class SplashActivity extends Activity {
 
 
     private ActivitySplashBinding binding;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         binding = ActivitySplashBinding.inflate(getLayoutInflater());
         View v = binding.getRoot();
         setContentView(v);

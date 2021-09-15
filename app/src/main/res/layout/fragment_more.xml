@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragments.MoreFragment">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/more_appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:title="More"
+            app:titleCentered="true"
+            app:navigationIcon="@drawable/ic_baseline_arrow_back_ios_new_24"
+            app:titleTextColor="@color/white"
+            app:navigationIconTint="@color/white"
+            />
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <ScrollView
+        android:id="@+id/scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/more_appbar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/ash">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ACCOUNT"
+                style="@style/MyTextViewStyle"/>
+            <TextView
+                android:id="@+id/more_sign_in"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Sign In"
+                android:background="@color/white"
+                style="@style/MyTextViewStyle"
+                app:drawableEndCompat="@drawable/ic_outline_navigate_next_24"
+                android:clickable="true"
+                android:focusable="true" />
+            <TextView
+                android:id="@+id/more_sign_up"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Create a new account"
+                android:background="@color/white"
+                android:layout_marginTop="1dp"
+                style="@style/MyTextViewStyle"
+                app:drawableEndCompat="@drawable/ic_outline_navigate_next_24" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="SETTINGS"
+                style="@style/MyTextViewStyle"/>
+            <TextView
+                android:id="@+id/more_profile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Profile"
+                style="@style/MyTextViewStyle"
+                android:background="@color/white"
+                app:drawableEndCompat="@drawable/ic_outline_navigate_next_24" />
+            <TextView
+                android:id="@+id/more_permission"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Permissions"
+                style="@style/MyTextViewStyle"
+                android:background="@color/white"
+                android:layout_marginTop="1dp"
+                app:drawableEndCompat="@drawable/ic_outline_navigate_next_24" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="HELP &amp; LOCAL"
+                style="@style/MyTextViewStyle"/>
+            <TextView
+                android:id="@+id/more_faq"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="FAQ"
+                style="@style/MyTextViewStyle"
+                android:background="@color/white"
+                app:drawableEndCompat="@drawable/ic_outline_navigate_next_24" />
+            <TextView
+                android:id="@+id/more_privacy_policy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Privacy Policy"
+                style="@style/MyTextViewStyle"
+                android:background="@color/white"
+                android:layout_marginTop="1dp"
+                app:drawableEndCompat="@drawable/ic_outline_navigate_next_24" />
+            <TextView
+                android:id="@+id/more_terms_and_condition"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Terms &amp; Conditions"
+                style="@style/MyTextViewStyle"
+                android:background="@color/white"
+                android:layout_marginTop="1dp"
+                app:drawableEndCompat="@drawable/ic_outline_navigate_next_24" />
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

@@ -8,10 +8,14 @@
         <entry key="..\:/AirFood/app/src/main/res/drawable/ic_baseline_search_24.xml" value="0.19583333333333333" />
         <entry key="..\:/AirFood/app/src/main/res/drawable/round_back.xml" value="0.202734375" />
         <entry key="..\:/AirFood/app/src/main/res/layout/activity_intro.xml" value="0.2" />
-        <entry key="..\:/AirFood/app/src/main/res/layout/activity_main.xml" value="0.176" />
+        <entry key="..\:/AirFood/app/src/main/res/layout/activity_login.xml" value="0.170703125" />
+        <entry key="..\:/AirFood/app/src/main/res/layout/activity_main.xml" value="0.2" />
+        <entry key="..\:/AirFood/app/src/main/res/layout/activity_register.xml" value="0.176" />
         <entry key="..\:/AirFood/app/src/main/res/layout/activity_splash.xml" value="0.25416666666666665" />
         <entry key="..\:/AirFood/app/src/main/res/layout/fragment_blank.xml" value="0.25416666666666665" />
         <entry key="..\:/AirFood/app/src/main/res/layout/fragment_home.xml" value="0.176" />
+        <entry key="..\:/AirFood/app/src/main/res/layout/fragment_more.xml" value="0.176" />
+        <entry key="..\:/AirFood/app/src/main/res/layout/notification_card.xml" value="0.2023148148148148" />
         <entry key="..\:/AirFood/app/src/main/res/layout/slider.xml" value="0.25416666666666665" />
         <entry key="..\:/AirFood/app/src/main/res/menu/nav_menu.xml" value="0.190625" />
         <entry key="..\:/AirFood/app/src/main/res/menu/toolbar_menu.xml" value="0.22592592592592592" />

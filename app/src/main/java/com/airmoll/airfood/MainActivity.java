@@ -11,11 +11,13 @@ import android.view.View;
 
 import com.airmoll.airfood.databinding.ActivityMainBinding;
 import com.airmoll.airfood.fragments.HomeFragment;
+import com.airmoll.airfood.fragments.MoreFragment;
 
 public class MainActivity extends AppCompatActivity {
 
     private ActivityMainBinding binding;
-    private HomeFragment homeFragment = new HomeFragment();
+    private final HomeFragment homeFragment = new HomeFragment();
+    private final MoreFragment moreFragment = new MoreFragment();
 
 
     @Override
@@ -27,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
 
         binding.bottomNav.setBackground(null);
         binding.bottomNav.getMenu().getItem(2).setEnabled(false);
-        getSupportFragmentManager().beginTransaction().replace(R.id.main_container,homeFragment).addToBackStack(null).commit();
+        getSupportFragmentManager().beginTransaction().replace(R.id.main_container,moreFragment).addToBackStack(null).commit();
         binding.fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

@@ -56,8 +56,9 @@
         android:contentDescription="@string/app_name"
         android:src="@drawable/b"
         android:tint="@color/airmoll"
+        app:borderWidth="@dimen/_10sdp"
+        app:elevation="10dp"
         app:layout_anchor="@id/bottom_app_bar"
         app:maxImageSize="70dp"
-        app:elevation="10dp"
-        app:borderWidth="@dimen/_10sdp"/>
+        tools:ignore="DuplicateSpeakableTextCheck" />
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

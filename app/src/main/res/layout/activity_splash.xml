@@ -6,6 +6,7 @@
     android:layout_height="match_parent"
     android:gravity="center"
     android:background="@drawable/bg_splash"
+    android:fitsSystemWindows="true"
     tools:context=".SplashActivity">
 
     <ImageView
